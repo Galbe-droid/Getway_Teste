@@ -123,7 +123,7 @@ namespace Backend.Controllers
 
                 produto.Preco = precoCorrectionDecimal;
 
-                produto.Data = DateTime.Now.ToString("HH/mm/ss - dd/MM/yyyy");                
+                produto.Data = DateTime.Now.ToString("HH:mm:ss - dd/MM/yyyy");                
 
                 _mainFunction.Add(produto);
                 await (_mainFunction.SaveChangesAsync());
@@ -156,7 +156,7 @@ namespace Backend.Controllers
 
                 produto.Preco = precoCorrectionDecimal;
 
-                produto.Data = DateTime.Now.ToString("HH/mm/ss - dd/MM/yyyy");
+                produto.Data = DateTime.Now.ToString("HH:mm:ss - dd/MM/yyyy");
 
                 oldProduto = produto;
 
